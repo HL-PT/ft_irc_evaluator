@@ -20,4 +20,5 @@ class Scenario:
 
     def cleanup(self):
         for c in self.clients:
+            c.quit()
             c.close()

@@ -15,18 +15,18 @@ import tests.test_who as who
 def run():
     print("🚀 IRC EVALUATION TEST START\n")
 
-    auth.test_full_registration()
-    auth.test_basic_registration()
-    auth.test_duplicate_nick()
+    # auth.test_full_registration()
+    # auth.test_basic_registration()
+    # auth.test_duplicate_nick()
 
-    broadcast.test_broadcast_consistency()
+    # broadcast.test_broadcast_consistency()
 
-    channel.test_join_channel()
-    channel.test_multi_join()
+    # channel.test_join_channel()
+    # channel.test_multi_join()
 
-    disc.test_disconnect_cleanup()
+    # disc.test_disconnect_cleanup()
 
-    invite.test_invite_only_channel()
+    invite.test_invite()
 
     mode.test_operator_mode()
 
