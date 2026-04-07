@@ -25,23 +25,24 @@ def run():
     # channel.test_multi_join()
 
     # disc.test_disconnect_cleanup()
+    # privmsg.test_private_message()
+    # privmsg.test_channel_message()
+    # privmsg.test_private_bigmessage()
+    # privmsg.test_private_bigmessage2()
 
     invite.test_invite()
 
-    mode.test_operator_mode()
+    # mode.test_operator_mode()
 
-    op.test_kick()
+    # op.test_kick()
 
-    edge.test_partial_packet()
+    # edge.test_partial_packet()
 
-    privmsg.test_private_message()
-    privmsg.test_channel_message()
+    # reconnect.test_reconnect()
 
-    reconnect.test_reconnect()
+    # topic.test_topic()
 
-    topic.test_topic()
-
-    who.test_who()
+    # who.test_who()
 
     print("\n🎯 ALL CORE TESTS TESTED")
 

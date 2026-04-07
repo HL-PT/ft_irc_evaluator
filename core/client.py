@@ -7,6 +7,7 @@ class IRCClient:
         self.nick = nick
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.settimeout(TIMEOUT)
+        self.tcp_nodelay = True
 
     def connect(self):
         self.sock.connect((HOST, PORT))
@@ -59,3 +60,10 @@ class IRCClient:
         data = self.recv_all()
         print(f"[{self.nick} recv]:\n{data}")
         return data
+
+    def connection_alive(self):
+        try:
+            self.sock.send(b"PING\r\n")
+            return True
+        except:
+            return False
