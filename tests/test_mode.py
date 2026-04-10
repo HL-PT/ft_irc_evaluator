@@ -17,6 +17,8 @@ def test_operator_mode():
 
     msgs = parse_irc_message(u.recv_all())
 
+    assert "482" in op.recv_all(), "❌ operator mode failed"
+    
     assert not any(m["command"] == "KICK" for m in msgs), \
         "❌ non-operator could kick"
 

@@ -29,12 +29,11 @@ def run():
     # privmsg.test_channel_message()
     # privmsg.test_private_bigmessage()
     # privmsg.test_private_bigmessage2()
-
-    invite.test_invite()
-
+    # invite.test_invite()
     # mode.test_operator_mode()
 
-    # op.test_kick()
+
+    op.test_kick()
 
     # edge.test_partial_packet()
 
